@@ -1,0 +1,454 @@
+<document>
+<heading>A rare case of H1N1 pdm09 infection with </heading>
+<heading>acute cerebellar syndrome  style="font-family:Arial; font-size:15.96; color:#221F1F; bold;– a case report </heading>
+<heading>Taymmia Ejaz1* </heading>
+<heading>, Jamal Ahmed1, Mahmood Malik1, </heading>
+<heading>Yousaf Jamal1 </heading>
+<heading>J </heading>
+<heading>ABSTRACT </heading>
+ style="font-family:Calibri; font-size:9; color:#221F1F; bold;Background: Influenza A H1N1 pdm09-associated neurological complications are rare, particularly in adults. This case report 
+highlights one of the uncommon presentations associated with H1N1 pdm09 infection. 
+<heading>J </heading>
+ style="font-family:Calibri; font-size:9; color:#221F1F; bold;Case  style="font-family:Calibri; font-size:9; color:#221F1F; bold;Presentation: We present the case of a 38-year-old male who was admitted to the hospital primarily with respiratory 
+manifestations and developed acute cerebellar ataxia during hospital stay, causing a diagnostic dilemma, as his cerebrospinal fluid 
+analysis and magnetic resonance imaging brain were unremarkable. Throat swab real-time reverse transcriptase polymerase chain 
+reaction {rRT-PCR) turned out positive for influenza A {H1N1) pdm09 virus strain and a nontypeable influenza A strain. He showed 
+the resolution of cerebellar signs and a remarkable recovery on oseltamivir therapy. Based on the acute onset, positive RT-PCR 
+and recovery on antiviral, a diagnosis of H1N1-associated cerebellitis was made. 
+ style="font-family:Calibri; font-size:9; color:#221F1F; bold;Conclusion: This report highlights an extremely rare complication of influenza infection with only five reported cases in adults and 
+case series in children. Vigilance and a high index of suspicion for patients presenting with rapid onset neurological deterioration 
+during pandemics and seasonal epidemics can prevent devastating sequelae. 
+ style="font-family:Calibri; font-size:9; color:#221F1F; bold;Keywords: Cerebellitis, influenza, cerebellar ataxia, influenza-associated encephalopathy, case report. 
+ style="font-family:Calibri; font-size:8.04; color:#221F1F; bold;Received: 29 January 2019 
+Type of Article:  style="font-family:Calibri; font-size:8.04; color:#221F1F;CASE  style="font-family:Calibri; font-size:8.04; color:#221F1F;REPORT 
+Funding:  style="font-family:Calibri; font-size:8.04; color:#221F1F;None 
+ style="font-family:Calibri; font-size:8.04; color:#221F1F; bold;Accepted: 12 February 2020 
+Specialty:  style="font-family:Calibri; font-size:8.04; color:#221F1F;Neurology 
+<heading>J </heading>
+ style="font-family:Calibri; font-size:8.04; color:#221F1F; bold;Declaration  style="font-family:Calibri; font-size:8.04; color:#221F1F; bold;of  style="font-family:Calibri; font-size:8.04; color:#221F1F; bold;conflicting  style="font-family:Calibri; font-size:8.04; color:#221F1F; bold;interests: The authors declare that there is 
+no conflict of interests regarding the publication of this case report. 
+<heading>J </heading>
+<heading>Background </heading>
+H1N1 influenza continues in the post-pandemic phase as 
+seasonal influenza, after its initial outbreak in Mexico in 
+the year 2009. Annual influenza epidemics result in 3–5 
+million cases of severe illness and an estimated 250,000– 
+500,000 deaths each year [1]. Neurological manifesta- 
+tions in influenza infections are diverse and rarely seen. 
+The estimated incidence of influenza-related neurological 
+complications (INCs) was 1.2 per 100,000 symptomatic 
+pdm09 H1N1 illnesses, as they were observed in 4% of 
+patients with fatal or severe H1N1 infections in one study; 
+however, more than three-fourth of these cases were in the 
+paediatric age group [2]. 
+There is a considerable overlap between acute cerebel- 
+<heading>J </heading>
+lar ataxia and acute cerebellitis as both are characterised 
+by parainfectious, postinfectious, or postvaccination cere- 
+bellar inflammation [3]. Cerebellitis cases in H1N1 infec- 
+tion in children have been reported in the form of case 
+series; however, there are few case reports in adults. In the 
+PubMed-based literature review, there were five reported 
+cases of influenza-associated cerebellitis [4–8] in adults 
+and only two in association with H1N1 pdm09 strain in 
+adults [6,8]. To the best of our knowledge, this is the first 
+reported case in Pakistan with this presentation in an adult. 
+<heading>J </heading>
+<heading>Case Report </heading>
+The patient was a previously healthy 38-year-old man 
+having no known comorbid conditions who presented 
+<pagenumber>52 </pagenumber>Correspondence to:  style="font-family:Calibri; font-size:8.04; color:#221F1F;Taymmia  style="font-family:Calibri; font-size:8.04; color:#221F1F;Ejaz 
+*Pulmonology Department, Military Hospital Rawalpindi, National 
+University of Medical Sciences, Rawalpindi, Pakistan. 
+Email:  style="font-family:Calibri; font-size:8.04; color:#221F1F;taymmia.ejaz@gmail.com 
+Full list of author information is available at the end of the article. 
+European Journal of 
+Medical Case Reports 
+Volume 4(2):52–55 
+© EJMCR. https://www.ejmcr.com/ 
+Reprints and permissions: 
+https://www.discoverpublish.com/ 
+https://doi.org/10.24911/ejmcr/ 
+173-1548796037 
+to the Emergency Department of Military Hospital 
+Rawalpindi on 3/1/18 with a 3-day history of fever, cough, 
+sore throat and vomiting. The cough was productive, 
+containing scanty mucoid sputum; fever was high grade 
+associated with rigors and chills. The patient had taken 
+co-amoxiclav but had found no relief. The past medical 
+history was unremarkable. He was a non-smoker, with no 
+recent contact with sick persons and no recent history of 
+immunisation against influenza vaccination. 
+Physical examination revealed that he had a fever of 
+102°F, blood pressure of 100/70 mm Hg, pulse rate of 104 
+beats/minute and respiratory rate of 24 breaths/minute; he 
+was maintaining saturation on room air (97%). The throat 
+was erythematous and congested. Chest auscultation 
+revealed bilateral crepitation. The cardiovascular exami- 
+nation was unremarkable. The neck was supple, there was 
+no rash noted and no lymph nodes were palpable. 
+Baseline blood count revealed a total leucocyte count 
+of 10,900/mm3 with neutrophilia (90%), and his renal 
+function tests, electrolytes and liver enzymes were within 
+normal limits. High-resolution computed tomography 
+(HRCT) scan chest showed bilateral patchy consolida- 
+tions, ground-glass opacities and airspace nodules. He was 
+hospitalised, and the treatment was started on lines of atyp- 
+ical pneumonia with antibiotics and supportive therapy. 
+On day 2 of admission, the patient developed slow 
+intentional tremors and complained of headache and 
+<heading>M ECERJMCR EMCERJMCR EMCERJMCR EMCERJMCR EMCERJMCR EMCERJMCR </heading>
+<heading>Taymmia Ejaz et al </heading>
+sudden onset difficulty in balance and walking. There was 
+no associated history of fits or previous history of neuro- 
+logical disease. He had no cognitive or behavioural defi- 
+cits. Neurological examination revealed GCS 15/15, no 
+neck stiffness, intact deep tendon reflexes and bilaterally 
+down going planters. Gait was broad based and ataxic, 
+and he had impaired coordination manifesting as bilateral 
+past pointing, nystagmus, dysdiadochokinesia and dysme- 
+tria. Cranial nerve examination was unremarkable. 
+His cerebrospinal fluid analysis opening pressure was 
+normal, cell count was 1 cell/mm3, with occasional lym- 
+phocytes, glucose was 63 mg/dl (serum, 139 mg/dl) and 
+total protein was 26 mg/dl. Gram stain and AFB stain were 
+negative. Urine, sputum and blood cultures were nega- 
+tive for any pathogens. Urine antigen tests for  style="font-family:Times New Roman; font-size:9.96; color:#221F1F;Legionella 
+ style="font-family:Times New Roman; font-size:9.96; color:#221F1F;pneumophila and Mycoplasma serology were also neg- 
+ative. Anti-glutamic acid decarboxylase antibodies and 
+anti-neuronal profile were negative. Extractable nuclear 
+antigens were also negative. Serum CK levels were 1479 
+U/l. A thorough review of drug intake was made, and 
+drug-induced ataxia was excluded. 
+Magnetic resonance imaging (MRI) brain with contrast 
+showed no abnormality to guide the diagnosis other than 
+a persistent cavum septum pellucidum and cavum verge 
+which are considered as normal variants. 
+A throat swab had been collected and sent to the 
+National Influenza Center, National Institute of Health, 
+Islamabad, for real-time reverse transcriptase polymerase 
+chain reaction (rRT-PCR). The sample was tested based 
+on Center for Disease Control and Prevention (CDC) 
+rRT-PCR protocol for the detection and characterisa- 
+tion of swine influenza. It was positive for influenza A 
+(H1N1) pdm09 virus strain and a nontypeable influenza 
+A strain. The patient was given a course of oseltamivir 75 
+mg twice daily for 5 days, Intravenous immunoglobulin, 
+plasmapheresis and admission to intensive care unit were 
+kept under consideration due to patient’s rapid  style="font-family:Times New Roman; font-size:9.96; color:#221F1F;onset  style="font-family:Times New Roman; font-size:9.96; color:#221F1F;of 
+symptoms and sudden deterioration. However, his tremors 
+improved over the next 3 days and ataxia resolved over 
+the next 1 week. Based on positive H1N1 RT-PCR and 
+onset of acute cerebellar syndrome, a diagnosis of H1N1- 
+associated cerebellitis was made. 
+He had no permanent or residual neurological seque- 
+lae and was discharged after a hospital stay of 22 days. 
+Follow-up neurological examination after 3 months 
+revealed no residual neurological deficit. 
+<heading>Discussion </heading>
+Acute cerebellitis in adults is a rare entity with a wide 
+range of aetiology, clinical presentation and outcomes. 
+The patient developed neurological symptoms 4 days 
+after disease onset. The median time from the onset of 
+influenza symptoms to the onset of neurologic symptoms 
+ranges from day 1 to 5, and almost all cases had onset 
+of neurologic symptoms within 5 days of illness onset in 
+<pagenumber>53 </pagenumber>one study [9]. Direct invasion and cytokines have been 
+proposed as the likely mechanisms behind acute onset 
+neurological complications, whereas adaptive immune 
+responses in subacute onset [9]. 
+A diagnosis of H1N1 infection requires confirmation 
+by RT-PCR of throat/nasopharyngeal swabs, viral culture, 
+or four-fold rise in new influenza A (H1N1) virus-spe- 
+cific neutralising antibodies [10]. The cerebrospinal fluid 
+(CSF) was abnormal in only 4 (22%) patients in another 
+study on INC [9]. In this case, CSF was not tested for viral 
+influenza RT-PCR, whereas it was positive in CSF for one 
+of the H1N1-associated cerebellitis cases [8]. Although 
+testing CSF for influenza virus RNA may help to establish 
+influenza-associated encephalopathy (IAE), a negative 
+PCR does not rule out the diagnosis. In a study by Meijer 
+et al., the influenza virus was detected in CSF of minority 
+(16%) of patients [11]. 
+MRI is the most sensitive imaging modality and is used 
+to either confirm a diagnosis or rule out other likely dif- 
+ferentials; however, in this case and in other various cases 
+in literature, it was unremarkable [3,4]. Only 43% (10/23) 
+had imaging abnormalities in one study [9], and 55% of 
+patients had normal imaging studies in a literature review 
+on INC [12]. Regardless of pathogenesis, the most char- 
+acteristic finding by MRI in cerebellitis is diffuse cortical 
+swelling of the cerebellum which can be complicated in 
+the form of hydrocephalus/tonsillar herniation. Imaging 
+and CSF findings are summarised in Table 1. 
+The treatment of acute cerebellitis depends on the aeti- 
+ology and complications. Antimicrobials and antivirals are 
+the mainstay in infectious aetiologies. When brain MRI 
+shows diffuse cerebellar swelling, patients should also 
+be treated with corticosteroids to prevent further swelling 
+and brain herniation [13]. Surgical interventions such as 
+external ventricular drain might also be required in hydro- 
+cephalus. In H1N1-related neurological complications, 
+antivirals should be ideally started within 48 hours of the 
+onset of clinical symptoms [10]. The patient’s  style="font-family:Times New Roman; font-size:9.96; color:#221F1F;condition 
+also improved after initiation of antiviral. Almost 25 (86%) 
+patients had received antiviral within 48 hours of hospital- 
+isation in the United States study, but all had received such 
+treatment after neurologic symptoms had begun [2]. 
+Almost half of the patients ended up with neurological 
+sequelae in a review on adult cases of cerebellitis, with 
+cerebellar atrophy given as a plausible explanation for 
+the cause [13]. CSF analysis and MRI appear to have a 
+prognostic value in patients with acute onset neurological 
+complications of influenza virus infection [11]. In a study 
+by Meijer et al. [11], all the patients with normal CSF 
+analysis (chemistry and/or PCR) and 7/9 (78 %) patients 
+with normal MRI made a full recovery. This is consistent 
+with the normal CSF and MRI imaging in this case and 
+the patient’s remarkable recovery without any permanent 
+neurological sequelae. 
+<heading>Taymmia Ejaz et al </heading>
+ style="font-family:Arial; font-size:8.04; color:#221F1F; bold;Table-1. Summary of literature review on case reports on Influenza associated cerebellitis 
+CASE REPORT- 
+TITLE/YEAR OF 
+PUBLICATION 
+CLINICAL 
+CHARACTERISTICS 
+CSF ANALYSIS 
+Probable post-influen- 31 -year-old woman Normal cell count, 
+za cerebellitis 1997  style="font-family:Arial; font-size:8.04; color:#221F1F; bold;[4] presented with ataxia glucose and protein 
+1 month after flu 
+symptoms 
+Type B influenza virus 
+was detected by RT- 
+PCR from the CSF at 7 
+and 9 weeks from onset 
+of flu symptoms 
+An adult case of acute A 25-year-old woman Cerebrospinal fluid 
+cerebellitis after influ- with fever and 
+Received 
+showed pleocytosis 
+enza A infection with 
+a cerebellar cortical 
+lesion on MRI 2006  style="font-family:Arial; font-size:8.04; color:#221F1F; bold;[5] 
+POI02 Fulminant cereb- Teenage girl devel- 
+ellitis related to H1N1: a oped fulminant cer- 
+first case report 2010  style="font-family:Arial; font-size:8.04; color:#221F1F; bold;[6] ebellitis after taking 
+anti-viral 
+Sub-acute 
+hydrocephalus in a 
+A 47-year-old man 
+with HCV hepatitis, 
+Influenza RT-PCR in 
+CSF was negative 
+Neurosurgical 
+intervention for 
+placement of an 
+external ventricu- 
+lar drain 
+CSF Glucose, proteins Suboccipital 
+& cells unremarkable. 
+decompressive 
+patient with influenza CKD-5D developed H3N2 influenza virus 
+A (H3N2) virus-related rapidly worsening 
+craniotomy 
+type A identified in CSF was performed 
+cerebellitis 2012[7] 
+headache resulting in culture, also isolated 
+from nasopharyngeal 
+a coma 
+specimens. 
+for raised ICP 
+patient was 
+mechanically 
+ventilated; 
+received 
+oseltamivir after 
+diagnosis 
+Cerebellitis associated 37-year-old female 
+with influenza A(H1N1) patient Onset day 
+pdm09, United States, 4 after onset of flu 
+2013  style="font-family:Arial; font-size:8.04; color:#221F1F; bold;[8] 
+symptoms 
+Elevated leukocytes 330/ Given 
+mm (13% neutrophils 
+oseltamivir, 75 
+and 62% lymphocytes) mg orally twice 
+Glucose and protein 
+Tri-ventricular Weaned from 
+hydrocephalus & mechanical 
+posterior cranial 
+ventilation and 
+fossa swelling on Discharged from 
+CT brain. MRI 
+intensive care 
+showed areas 
+of hyperintense 
+unit on day 17 in 
+a persisting coma 
+signal on T2-WI state 
+in in the corti- 
+cal-subcortical re- 
+gion of cerebellar 
+hemispheres 
+Enlarged 
+Discharged 
+bilateral cerebel- after 1 week 
+lar hemispheres with complete 
+daily for 5 days. with evidence of 
+levels in CSF 61 mg/dL 
+and 41 mg/dL, RT-PCR 
+for influenza A(H1N1) 
+pdm09 virus RNA was 
+positive. 
+hypo intensity 
+of the affected 
+thoracic vertebral 
+segment on 
+T1 image and 
+hyperintensity on 
+the T2 image. 
+<heading>Conclusion </heading>
+This case highlights a rare and potentially devastating mani- 
+festation of influenza infection. Clinicians should maintain a 
+high index of suspicion particularly in peak seasons and high- 
+risk populations. A national surveillance study, such as those 
+done in the UK and US regarding neurological manifestations 
+and their outcomes in the population, can further guide clini- 
+cians in diagnosis and management of these complications. 
+<heading>What is new? </heading>
+This case report is based on a rare manifestation of H1N1 
+2009 pandemic strain or swine flu. To the best of our 
+knowledge, this is the first such reported case in an adult 
+in Pakistan; the case highlights the importance of early rec- 
+ognition and treatment of influenza-associated cerebellitis/ 
+acute cerebellar syndrome and gives a brief review of other 
+reported cases in literature. 
+<pagenumber>54 </pagenumber><heading>List of Abbreviations </heading>
+CSF 
+recovery 
+headache 
+Oseltamivir and 
+steroid pulse 
+therapy 
+T2-weighted 
+brain MRI 
+demonstrated 
+a high signal 
+lesion in the 
+MRI lesion disap- 
+peared 80 days 
+after hospitaliza- 
+tion, truncal ataxia 
+and CSF pleocyto- 
+cerebellar cortex. sis resolved three 
+months later. 
+Hydrocephalus Residual 
+left-sided ataxia 
+after 3 months 
+TREATMENT 
+IMAGING 
+Not specified/NA CT-scan and 
+MRI Brain 
+essentially 
+normal 
+OUTCOME 
+Resolution of 
+symptoms over 
+three-month 
+period 
+Cerebrospinal fluid 
+HRCT High-resolution computed tomography 
+IAE 
+Influenza-associated encephalopathy 
+MRI 
+Magnetic resonance imaging 
+RT-PCR Reverse transcriptase polymerase chain reaction 
+<heading>Consent for publication </heading>
+Informed consent was taken from the patient. 
+<heading>Ethical approval </heading>
+Ethical approval was obtained from the institute. 
+<heading>Author details </heading>
+Taymmia Ejaz1, Jamal Ahmed1, Mahmood Malik1, Yousaf Jamal1 
+1. Pulmonology Department, Military Hospital Rawalpindi, 
+National University of Medical Sciences, Rawalpindi, Pakistan 
+<heading>Taymmia Ejaz et al </heading>
+<heading>References </heading>
+1. World Health Organization. Influenza {Seasonal): fact 
+sheet [Internet]. Geneva, Switzerland: World Health 
+Organization; 2014. pp 1-4. Available from: http://www. 
+who.int/mediacentre/factsheets/fs211/en/ 
+2. Glaser CA, Winter K, DuBray K, Harriman K, Uyeki TM, 
+Sejvar J, et al. A population-based study of neurologic 
+manifestations of severe Influenza A{H1N1)pdm09 in 
+California. Clin Infect Dis. 2012;55:514-20. https://doi. 
+org/10.1093/cid/cis454 
+3. Gokce  style="font-family:Tahoma; font-size:9; color:#221F1F;�, Kurugol Z, Aslan A. A rare cause of childhood 
+Cerebellitis-Influenza infection: a case report and system- 
+atic review of literature. Case Rep Pediatr. 2017;2017:1- 
+5. https://doi.org/10.1155/2017/4039358 
+4. Hayase Y, Tobita K. Probable post-influenza cerebellitis. 
+Intern Med. 1997;36:747-9. https://doi.org/10.2169/ 
+internalmedicine.36.747 
+5. 
+Ishikawa T, Fujio Y, Morita M, Takiyama Y, Nakano I. [An 
+adult case of acute cerebellitis after influenza A infec- 
+tion with a cerebellar corical lesion on MRI]. Rinsho 
+Shinkeigaku. 2006;46:491-5. 
+6. Apok V, Alamri A, Qureshi A, Donaldson-Hugh B. POI02 
+Fulminant cerebellitis related to H1N1: a first case report. 
+J Neurol Neurosurg Psychiatry. 2010;81:e53. https://doi. 
+org/10.1136/jnnp.2010.226340.143 
+7. De Santis P, Della Marca G, Di Lella G, Cavallaro F. Sub- 
+acute hydrocephalus in a patient with influenza A 
+<heading>Summary of the case </heading>
+1 
+{H3N2) virus-related cerebellitis. J Neurol Neurosurg 
+Psychiatry. 2012;83:1091-2. https://doi.org/10.1136/ 
+jnnp-2012-302932 
+8. 
+Sfeir MM, Najem CE. Cerebellitis associated with influ- 
+enza A{H1N1)pdm09, United States, 2013. Emerg 
+Infect Dis. 2014;20:1578-80. https://doi.org/10.3201/ 
+eid2009.140160 
+9. Goenka A, Michael BD, Ledger E, Hart IJ, Absoud M, Chow 
+G, et al. Neurological manifestations of influenza infection 
+in children and adults: results of a national British surveil- 
+lance study. Clin Infect Dis. 2014;58:775-84. https://doi. 
+org/10.1093/cid/cit922 
+10. Healthcare M. Swine Flu {H1N1 Influenza A): a concise 
+review. Indian J Immunol Respir Med. 2017;2:29-32. 
+https://doi.org/10.18231/2456-012X.2017.0002 
+11. Meijer WJ, Linn FHH, Wensing AMJ, Leavis HL, van Riel 
+D, Geurtsvan Kessel CH, et al. Acute influenza virus-as- 
+sociated encephalitis and encephalopathy in adults: a 
+challenging diagnosis. JMM Case Rep. 2016;3:e005076. 
+https://doi.org/10.1099/jmmcr.0.005076 
+12. Bengualid V, Berger J. Neurologic complications of acute 
+influenza in adults: case report and review of the litera- 
+ture. J Neurosci Clin Res. 2017;2:1. 
+13. Van Samkar A, Poulsen MNF, Bienfait HP, Van Leeuwen 
+RB. Acute cerebellitis in adults: a case report and review 
+of the literature. BMC Res Notes. 2017;10:610. https:// 
+doi.org/10.1186/s13104-017-2935-8 
+Patient (gender, age) 
+2 
+3 
+Final Diagnosis 
+Symptoms 
+4  style="font-family:Calibri; font-size:9; color:#221F1F; bold;Medications 
+5 
+6 
+Clinical Procedure 
+Specialty 
+Male, 38-year-old 
+H1N1 pdm 2009 infection with acute cerebellar syndrome 
+Headache, fever cough, acute onset gait disturbance 
+Oseltamivir 
+HRCT scan chest done, Contrast-enhanced MRI brain, throat swab H1N1 RT-PCR was positive 
+for H1N1 influenza A pdm 2009 strain, improvement in neurological symptoms with oseltamivir 
+therapy 75 mg twice daily for 5 days, clinical follow-up done 
+Pulmonology, Neurology 
+<pagenumber>55 </pagenumber>View publication stats 
+
+</document>

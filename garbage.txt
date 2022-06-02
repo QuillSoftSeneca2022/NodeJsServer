@@ -1,0 +1,239 @@
+                // checking HEADING with word
+                // if (
+                //   words.trim().match(/abstract/gi) != null ||
+                //   words.trim().match(/reference/gi) != null ||
+                //   words.trim().match(/method/gi) != null ||
+                //   words.trim().match(/result/gi) != null ||
+                //   words.trim().match(/introduction/gi) != null ||
+                //   words.trim().match(/conclusion/gi) != null
+                // ) {
+                //   console.log(
+                //     `line ${await line.getCurrentNum()} : ${words}  --> HEADING?`
+                //   );
+                // }
+
+
+                 // When font style is not special, checking paragraph's last line
+              // if (words[words.length - 2] == ".") {
+              //   console.log(
+              //     `line ${await line.getCurrentNum()} : ${words}  --> LAST LINE OF PARAGRAPH?`
+              //   );
+              // }
+
+
+              // let xmlData = `<?xml version="1.0" encoding="UTF-8"s?>
+      //   <TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0"
+      //   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      //   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+      //    xmlns:xlink="http://www.w3.org/1999/xlink">
+      //           <teiHeader xml:lang="en">
+      //                   <fileDesc>
+      //                           <titleStmt>
+      //                                   <title level="a" type="main"></title>
+      //                           </titleStmt>
+      //                           <publicationStmt>
+      //                                   <publisher/>
+      //                                   <availability status="unknown"><licence/></availability>
+      //                           </publicationStmt>
+      //                           <sourceDesc>
+      //                                   <biblStruct>
+      //                                           <analytic>
+      //                                           </analytic>
+      //                                           <monogr>
+      //                                                   <imprint>
+      //                                                           <date/>
+      //                                                   </imprint>
+      //                                           </monogr>
+      //                                   </biblStruct>
+      //                           </sourceDesc>
+      //                   </fileDesc>
+      //                   <encodingDesc>
+      //                           <appInfo>
+      //                                   <application version="0.6.2" ident="GROBID" when="2022-05-04T20:10+0000">
+      //                                           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+      //                                           <ref target="https://github.com/kermitt2/grobid"/>
+      //                                   </application>
+      //                           </appInfo>
+      //                   </encodingDesc>
+      //                   <profileDesc>
+      //                           <abstract/>
+      //                   </profileDesc>
+      //           </teiHeader>
+      //           <facsimile>
+      //                   <surface n="1" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+      //                   <surface n="2" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+      //                   <surface n="3" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+      //                   <surface n="4" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+      //                   <surface n="5" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+      //                   <surface n="6" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+      //                   <surface n="7" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+      //                   <surface n="8" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+      //           </facsimile>
+      //           <text xml:lang="en">
+      //                   <body>
+      //   <div xmlns="http://www.tei-c.org/ns/1.0"><p>ith the Ebola epidemic in West Africa continu ing to grow, the World Health Organization convened an urgent meeting on September 29 and 30 to assess the efforts under way to evaluate and produce safe and effective Ebola vaccines as soon as possible. The 70 scientists, public health officials, and representatives from industry and regulatory bodies who gathered in Geneva discussed two vaccine candidates at length cAd3-EBOV, from Glaxo SmithKline and the YOU.S. National Institute of Allergy and Infectious Diseases, and rVSV G-ZEBOV-GP, from NewLink Genetics and the Public Health Agency of Canada. Several other vaccine candidates are at earlier, preclinical stages in the development pipeline. Phase 1 studies of cAd3 have begun in the United States and the United Kingdom, and researchers plan to begin enrollment for trials of rVSV soon. Both vaccine can didates have demonstrated 100% efficacy in studies in nonhuman primates,2,3 but how that will translate to human subjects re mains unknown. The phase 1 trials of both vaccines use dose response designs structured to determine the level of humoral and cellular immunity that can be induced. The minimum antibody titer needed to confer protection in humans is unknown. Because of the small numbers of partici pants in these trials, they will pro vide data only on common adverse events.</p><p>The cAd3 vaccine is being tested in both bivalent (ClinicalTrials .gov number, NCT02231866) and monovalent forms; the monovalent form is based on the Zaire strain of Ebola virus, which is the because of the current West African epidemic, and the bivalent form includes the Sudan strain of the virus as well (see Fig. <ref type="figure" coords="2,50.90,138.57,3.46,8.44">1</ref>). The monovalent form will be evaluated in a nonrandomized, open-label study involving 60 adult volunteers who will receive the vaccine at three different doses ( <ref type="formula" coords="2,61.01,192.59,3.98,8.44">1</ref> The first phase 1 trial of the rVSV vaccine is slated to begin soon in the United States. Ideally, the immunogenicity outcomes in this trial will be compared with those obtained with the GSK NIAID vac cine. The government of Canada has donated 800 vials of rVSV to the WHO, and discussions about expanding phase 1 trials to Euro pean and sub-Saharan African sites are at an advanced stage.</p><p>Participants in the Geneva meeting stressed that phase 1 tri als should be expedited and their results shared broadly in order to facilitate rapid progression to phase 2. If the results in phase 1 are favorable, the consensus was that phase 2a studies should be conducted in Africa but outside the current Ebola outbreak zone and should proceed in parallel with phase 2b studies conducted in exposed populations. This ap proach will provide robust effi cacy and safety data as quickly as possible. Results from phase 2a trials in unexposed populations would inform the use of these vaccines in expanded populations, including children and people who are HIV-positive. The phase 2b trials in exposed populations would enroll people who are at the high est risk for Ebola virus disease, in cluding frontline workers at Ebola treatment facilities.</p><p>The design of these proposed trials in exposed populations raises many complex questions that pit issues of scientific rigor against feasibility and acceptabil ity. Since there are no data on the efficacy of Ebola vaccines in hu mans, equipoise justifies the use of a randomized, controlled trial. Yet though it s clear that well-designed randomized, controlled trials would generate the most reliable and robust data regarding vaccine efficacy, the feasibility of such studies may be affected by the same fear and resistance to inter ventions that communities have evinced in the West African epi demic to date. The trials there fore need to be designed with par ticipation from local governments and communities so that they can proceed in a manner that is acceptable to the affected popu lations. The consensus at the Ge neva meeting was that there are reasonable alternatives if individ ually randomized, controlled tri als are not acceptable in some settings for example, studies using a stepped-wedge design (see Fig. <ref type="figure" coords="3,50.90,527.48,3.46,8.44">2</ref>). A basic principle of every study design should be that all participants will receive Ebola vac cine at some point. There was also agreement that health care work ers who care for patients with Ebola or are otherwise exposed to patients body fluids in hospi tals and clinics, family members Even if adequate safety and immunogenicity are demonstrated in the phase 1 studies, vaccines will not be available in substan tial quantity until the first quarter of 2015 at the earliest. For that to occur, funding must be secured for production. Even if an effective vaccine can be produced, it is not likely to be 100% effective, so to succeed in stemming the current outbreak, a coordinated effort to improve capacity and provide clini cal care in affected countries needs to be scaled up urgently.</p><p>Disclosure forms provided by the authors are available with the full text of this article at NEJM.org.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,67.43,192.59,100.25,8.44;2,33.30,203.39,133.00,8.44;2,33.30,214.20,110.81,8.44;2,33.30,225.00,123.64,8.44;2,33.30,235.80,119.64,8.44;2,33.30,246.60,127.59,8.44;2,33.30,257.41,23.71,8.44;2,33.30,268.21,118.58,8.44;2,33.30,279.01,129.77,8.44;2,33.30,289.82,122.32,8.44;2,33.30,300.62,127.32,8.44;2,33.30,311.42,89.44,8.44;2,33.30,322.23,121.20,8.44;2,33.30,333.03,120.69,8.44;2,33.30,343.83,128.96,8.44;2,33.30,354.63,303.35,8.44;2,33.30,376.24,429.40,8.44;2,33.30,387.04,359.36,8.44;2,33.30,408.65,62.34,8.44;2,33.30,430.26,84.46,8.44;2,33.30,441.06,4.76,8.44;2,33.30,462.66,114.04,8.44;2,33.30,473.47,119.06,8.44;2,33.30,484.27,42.89,8.44"><head></head><label></label><figDesc>1010 vp, 2.5 1010 vp, and 5 1010 vp). The bivalent form will be evaluated in a nonrandom ized, open-label study involving 20 adult volunteers who will re ceive the vaccine at two different doses. Both studies will assess safety, side effects, and immunogenicity, including antibody responses as measured by enzyme-linked i am munosorbent assay and neutralization assays and T-cell immune responses as measured by intracellular cytokine staining. Investigators anticipate that preEbola Vaccine An Urgent International Priority Rupa Kanapathipillai, M.D., Ana Maria Henao Restrepo, M.D., Patricia Fast, M.D., Ph.D., David Wood, Ph.D., Christopher Dye, D.Phil., Marie-Paule Kieny, Ph.D., and Vasee Moorthy, B.M., B.Ch., Ph.D. PERSPECTIVE n engl j med nejm.org 2 liminary immunogenicity and safety data will be available by November.</figDesc></figure>
+      //                   </body>
+      //                   <back>
+
+      //                           <div type="acknowledgement">
+      //   <div xmlns="http://www.tei-c.org/ns/1.0"><p>Dr. Kanapathipillai is an editorial fellow at the Journal. Other authors are from the World Health Organization, Geneva. This article was published on October 7, 2014, at NEJM.org.</p></div>
+      //                           </div>
+
+      //                           <div type="annex">
+      //   <div xmlns="http://www.tei-c.org/ns/1.0" />                     </div>
+      //                           <div type="references">
+
+      //                                   <listBibl>
+
+      //   <biblStruct coords="8,42.90,116.97,156.11,8.44;8,33.30,127.77,168.92,8.44;8,33.30,138.57,144.95,8.44;8,33.30,149.38,129.74,8.44;8,33.30,160.18,107.39,8.44" xml:id="b0">
+      //           <analytic>
+      //                   <title level="a" type="main">World Health Organization expedites trials for potential Ebola vaccines</title>
+      //                   <idno type="DOI">10.1211/pj.2014.20066400</idno>
+      //                   <ptr target="http://who.int/mediacentre/news/ebola/01-october-2014/en/" />
+      //           </analytic>
+      //           <monogr>
+      //                   <title level="j">The Pharmaceutical Journal</title>
+      //                   <idno type="ISSN">2053-6186</idno>
+      //                   <imprint>
+      //                           <date type="published" when="2014" />
+      //                           <publisher>Royal Pharmaceutical Society</publisher>
+      //                   </imprint>
+      //           </monogr>
+      //   </biblStruct>
+
+      //   <biblStruct coords="8,42.90,170.98,177.52,8.44;8,33.30,181.79,162.78,8.44;8,33.30,192.59,148.13,8.44;8,33.30,203.39,170.53,8.44;8,33.30,214.20,50.62,8.44" xml:id="b1">
+      //           <analytic>
+      //                   <title level="a" type="main">Chimpanzee adenovirus vaccine generates acute and durable protective immunity against ebolavirus challenge</title>
+      //                   <author>
+      //                           <persName><forename type="first">Daphne</forename><forename type="middle">A</forename><surname>Stanley</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Anna</forename><forename type="middle">N</forename><surname>Honko</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Clement</forename><surname>Asiedu</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">John</forename><forename type="middle">C</forename><surname>Trefry</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Annie</forename><forename type="middle">W</forename><surname>Lau-Kilby</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Joshua</forename><forename type="middle">C</forename><surname>Johnson</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Lisa</forename><surname>Hensley</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Virginia</forename><surname>Ammendola</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Adele</forename><surname>Abbate</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Fabiana</forename><surname>Grazioli</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Kathryn</forename><forename type="middle">E</forename><surname>Foulds</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Cheng</forename><surname>Cheng</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Lingshu</forename><surname>Wang</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Mitzi</forename><forename type="middle">M</forename><surname>Donaldson</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Stefano</forename><surname>Colloca</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Antonella</forename><surname>Folgori</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Mario</forename><surname>Roederer</surname></persName>
+      //                           <idno type="ORCID">0000-0001-7448-7040</idno>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Gary</forename><forename type="middle">J</forename><surname>Nabel</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">John</forename><surname>Mascola</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Alfredo</forename><surname>Nicosia</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Riccardo</forename><surname>Cortese</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Richard</forename><forename type="middle">A</forename><surname>Koup</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Nancy</forename><forename type="middle">J</forename><surname>Sullivan</surname></persName>
+      //                   </author>
+      //                   <idno type="DOI">10.1038/nm.3702</idno>
+      //           </analytic>
+      //           <monogr>
+      //                   <title level="j">Nature Medicine</title>
+      //                   <title level="j" type="abbrev">Nat Med</title>
+      //                   <idno type="ISSN">1078-8956</idno>
+      //                   <idno type="ISSNe">1546-170X</idno>
+      //                   <imprint>
+      //                           <biblScope unit="volume">20</biblScope>
+      //                           <biblScope unit="issue">10</biblScope>
+      //                           <biblScope unit="page" from="1126" to="1129" />
+      //                           <date type="published" when="2014-09-07" />
+      //                           <publisher>Springer Science and Business Media LLC</publisher>
+      //                   </imprint>
+      //           </monogr>
+      //   </biblStruct>
+
+      //   <biblStruct coords="8,42.90,225.00,182.81,8.44;8,33.30,235.80,168.66,8.44;8,33.30,246.60,164.41,8.44;8,33.30,257.41,167.62,8.44;8,33.30,268.21,73.32,8.44" xml:id="b2">
+      //           <analytic>
+      //                   <title level="a" type="main">Single-Injection Vaccine Protects Nonhuman Primates against Infection with Marburg Virus and Three Species of Ebola Virus</title>
+      //                   <author>
+      //                           <persName><forename type="first">Thomas</forename><forename type="middle">W</forename><surname>Geisbert</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Joan</forename><forename type="middle">B</forename><surname>Geisbert</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Anders</forename><surname>Leung</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Kathleen</forename><forename type="middle">M</forename><surname>Daddario-Dicaprio</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Lisa</forename><forename type="middle">E</forename><surname>Hensley</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Allen</forename><surname>Grolla</surname></persName>
+      //                   </author>
+      //                   <author>
+      //                           <persName><forename type="first">Heinz</forename><surname>Feldmann</surname></persName>
+      //                   </author>
+      //                   <idno type="DOI">10.1128/jvi.00561-09</idno>
+      //           </analytic>
+      //           <monogr>
+      //                   <title level="j">Journal of Virology</title>
+      //                   <title level="j" type="abbrev">J Virol</title>
+      //                   <idno type="ISSN">0022-538X</idno>
+      //                   <idno type="ISSNe">1098-5514</idno>
+      //                   <imprint>
+      //                           <biblScope unit="volume">83</biblScope>
+      //                           <biblScope unit="issue">14</biblScope>
+      //                           <biblScope unit="page" from="7296" to="7304" />
+      //                           <date type="published" when="2009-07-15" />
+      //                           <publisher>American Society for Microbiology</publisher>
+      //                   </imprint>
+      //           </monogr>
+      //   </biblStruct>
+
+      //                                   </listBibl>
+      //                           </div>
+      //                   </back>
+      //           </text>
+      //   </TEI>`;

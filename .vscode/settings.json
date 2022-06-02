@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5500,
+    "env": {
+      "NODE_ENV": "development",
+      "NODE_PATH": "/Users/yuriyoon/Downloads/QuillSoft/nodeserver/node_modules",
+    }
+}
