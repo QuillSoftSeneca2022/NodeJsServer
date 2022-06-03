@@ -164,17 +164,17 @@ const main = async () => {
     // show basic information on console.log
     console.log("Total page count : ", pageCount);
 
-    // 1st for loop for all pages
+    // 1st big for loop for all pages
     for (let i = 1; i <= pageCount; i++) {
       const page = await doc.getPage(i);
       const txt = await PDFNet.TextExtractor.create();
       txt.begin(page);
+      // inner for loop for all the lines
       for (
         line = await txt.getFirstLine();
         await line.isValid();
         line = await line.getNextLine()
       ) {
-        totalLineCount += 1;
         const lineStyle = await line.getStyle();
         let fontStr = await printStyle(lineStyle);
         let font = fontStr.slice(
@@ -287,6 +287,7 @@ const main = async () => {
         await line.isValid();
         line = await line.getNextLine()
       ) {
+        totalLineCount += 1;
         const currentLineNum = await line.getCurrentNum();
         const lineStyle = await line.getStyle();
         let fontStr = await printStyle(lineStyle);
@@ -337,6 +338,7 @@ const main = async () => {
           await word.isValid();
           word = await word.getNextWord()
         ) {
+          // total line count
           // output bounding box for the word
           let outputStringWord = "";
           const sz = await word.getStringLen();
@@ -354,6 +356,7 @@ const main = async () => {
         }
         // End of the each line
         text += "</Line>\n";
+        paragraphs += `<ln>${totalLineCount}</ln>`;
         // check all the headings
         if (Headers.includes(extractedString)) {
           // header and footer case
@@ -366,7 +369,7 @@ const main = async () => {
           // title until abstract
           if (extractedString.trim().match(/abstract/i)) {
             // very first heading
-            paragraphs += `<section>\n<heading>${extractedString}</heading>\n`;
+            paragraphs += `<heading>${extractedString}</heading>\n`;
             isAbstract = false;
           } else {
             // title
