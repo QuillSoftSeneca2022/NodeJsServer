@@ -282,6 +282,7 @@ const main = async () => {
       //console.log(`\npage number : ${i} ------------------------ \n`);
 
       // For Loop for each line and extract those to text
+      let isBracketed = false;
       for (
         line = await txt.getFirstLine();
         await line.isValid();
@@ -333,6 +334,7 @@ const main = async () => {
 
         // 2nd loop - For each word in every line...
         let extractedString = "";
+
         for (
           word = await line.getFirstWord();
           await word.isValid();
@@ -352,7 +354,19 @@ const main = async () => {
           // }
           outputStringWord += await word.getString();
           text += outputStringWord + " ";
-          extractedString += outputStringWord + " ";
+
+          if (outputStringWord.includes("(")) {
+            isBracketed = true;
+            // not adding extractedString
+          }
+
+          if (!isBracketed) {
+            extractedString += outputStringWord + " ";
+          }
+          if (outputStringWord.includes(")")) {
+            isBracketed = false;
+            // not adding extractedString
+          }
         }
         // End of the each line
         text += "</Line>\n";
@@ -361,48 +375,41 @@ const main = async () => {
         if (Headers.includes(extractedString)) {
           // header and footer case
           if (currentLineNum < 5) {
-            paragraphs += `<header><ln id="${totalLineCount}"/>${extractedString}</header>\n`;
+            //paragraphs += `<header>${extractedString}</header>\n`;
           } else {
-            paragraphs += `<footer><ln id="${totalLineCount}"/>${extractedString}</footer>\n`;
+            //paragraphs += `<footer>${extractedString}</footer>\n`;
           }
         } else if (i == 1 && isAbstract) {
           // title until abstract
           if (extractedString.trim().match(/abstract/i)) {
-            // very first heading
-            paragraphs += "<section>\n";
-            paragraphs += `<heading><ln id="${totalLineCount}"/>${extractedString}</heading>\n`;
+            // very first head
+            paragraphs += `<div>`;
+            paragraphs += `<head>${extractedString}</head>`;
+            paragraphs += `<p>`;
             isAbstract = false;
           } else {
             // title
-            paragraphs += `<title><ln id="${totalLineCount}"/>${extractedString}</title>\n`;
+            paragraphs += `<title>${extractedString}</title>\n`;
           }
         } else if (headingNumberArray.includes(currentLineNum)) {
-          // among remaining heading...
+          // among remaining head...
           console.log(paragraphs.slice(paragraphs.length - 11));
-          if (
-            // if one line before heading is ending with </p>, close section
-            paragraphs.slice(paragraphs.length - 5) == "</p>\n" ||
-            paragraphs.slice(paragraphs.length - 11) == "</heading>\n"
-          ) {
-            paragraphs += "</section>\n";
-          }
-          paragraphs += "<section>\n";
-          paragraphs +=
-            `<heading><ln id="${totalLineCount}"/>` +
-            extractedString +
-            "</heading>\n";
+          paragraphs += `</p>`;
+          paragraphs += `</div>\n<div>`;
+          paragraphs += `<head>` + extractedString + "</head>";
+          paragraphs += `<p>`;
         } else if (pageNumberArray.includes(currentLineNum)) {
           // if heading only consists of digits, consider it page number
-          paragraphs += `<pagenumber><ln id="${totalLineCount}"/>${extractedString}</pagenumber>\n`;
+          //paragraphs += `<pagenumber>${extractedString}</pagenumber>\n`;
         } else {
           // normal line
-          paragraphs += `<p><ln id="${totalLineCount}"/>${extractedString}</p>\n`;
+          paragraphs += `${extractedString}`;
         }
       }
     } // End of page iterator for loop
     // End of the document
     text += `\n line count : ${totalLineCount}`;
-    paragraphs += "</section>\n";
+    paragraphs += "</p></div>\n";
     paragraphs += "</document>\n";
 
     //   fs.appendFile(
