@@ -1,3 +1,4 @@
+// This version of extraction is for every line in the <p> tag.
 const { PDFNet } = require("@pdftron/pdfnet-node");
 const fs = require("fs");
 
