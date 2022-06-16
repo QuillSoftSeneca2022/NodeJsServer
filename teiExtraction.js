@@ -156,7 +156,16 @@ const main = async () => {
       fontColors = [];
     let text = "",
       headings = "",
-      paragraphs = "<document>\n";
+      paragraphs = `<?xml version="1.0" encoding="UTF-8"?>
+      <TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+       xmlns:xlink="http://www.w3.org/1999/xlink">
+        <teiHeader xml:lang="en">
+          <fileDesc>
+            <sourceDesc>
+              <biblStruct>
+                <analytic>`;
     let possibleHeaders = [];
     let abstractLineNum = 0;
     let isAbstract = false;
@@ -264,6 +273,7 @@ const main = async () => {
     //console.log("headers or footers", Headers);
 
     // 2nd for loop for all pages
+    let isAfterReference = false;
     for (let i = 1; i <= pageCount; i++) {
       let headingNumberArray = [];
       let pageNumberArray = [];
@@ -279,10 +289,10 @@ const main = async () => {
 
       text += `page number : ${i} ------------------------ \n\n`;
       headings += `\n\npage number : ${i} ------------------------ \n`;
-      //console.log(`\npage number : ${i} ------------------------ \n`);
 
       // For Loop for each line and extract those to text
       let isBracketed = false;
+
       for (
         line = await txt.getFirstLine();
         await line.isValid();
@@ -340,77 +350,99 @@ const main = async () => {
           await word.isValid();
           word = await word.getNextWord()
         ) {
-          // total line count
           // output bounding box for the word
           let outputStringWord = "";
           const sz = await word.getStringLen();
           if (sz === 0) {
             continue;
           }
-          // if the word style is different from the parent style, output the new style
-          // const sty = await word.getStyle();
-          // if (!(await sty.compare(lineStyle))) {
-          //   outputStringWord += await printStyle(sty);
-          // }
           outputStringWord += await word.getString();
           text += outputStringWord + " ";
 
           if (outputStringWord.includes("(")) {
             isBracketed = true;
-            // not adding extractedString
           }
-
           if (!isBracketed) {
             extractedString += outputStringWord + " ";
           }
           if (outputStringWord.includes(")")) {
             isBracketed = false;
-            // not adding extractedString
           }
         }
         // End of the each line
         text += "</Line>\n";
-        //paragraphs += `<ln>${totalLineCount}</ln>`;
+
         // check all the headings
-        if (Headers.includes(extractedString)) {
-          // header and footer case
-          if (currentLineNum < 5) {
-            //paragraphs += `<header>${extractedString}</header>\n`;
-          } else {
-            //paragraphs += `<footer>${extractedString}</footer>\n`;
+        if (!isAfterReference) {
+          if (i == 1 && !isAbstract) {
+            // in case of no abstract
+            if (headingNumberArray[0] == currentLineNum) {
+              paragraphs += `<title>${extractedString}</title>\n`;
+              paragraphs += `</analytic>
+              </biblStruct>
+            </sourceDesc>
+          </fileDesc>
+      
+          <profileDesc>
+            <abstract/>
+          </profileDesc>
+        </teiHeader>
+      
+        <text xml:lang="en">
+          <body>
+          <div><p>`;
+            }
           }
-        } else if (i == 1 && isAbstract) {
-          // title until abstract
-          if (extractedString.trim().match(/abstract/i)) {
-            // very first head
-            paragraphs += `<div>`;
-            paragraphs += `<head>${extractedString}</head>`;
+          if (i == 1 && isAbstract) {
+            // title until abstract
+            if (extractedString.trim().match(/abstract/i)) {
+              // very first head
+              paragraphs += `</analytic>
+              </biblStruct>
+            </sourceDesc>
+          </fileDesc>
+      
+          <profileDesc>
+            <abstract/>
+          </profileDesc>
+        </teiHeader>
+      
+        <text xml:lang="en">
+          <body>`;
+              paragraphs += `<div>`;
+              paragraphs += `<head>${extractedString}</head>`;
+              paragraphs += `<p>`;
+              isAbstract = false;
+            } else {
+              // title
+              paragraphs += `<title>${extractedString}</title>\n`;
+            }
+          } else if (headingNumberArray.includes(currentLineNum)) {
+            // among remaining head...
+            console.log(paragraphs.slice(paragraphs.length - 11));
+            paragraphs += `</p>`;
+            paragraphs += `</div>\n<div>`;
+            paragraphs += `<head>` + extractedString + "</head>";
             paragraphs += `<p>`;
-            isAbstract = false;
           } else {
-            // title
-            paragraphs += `<title>${extractedString}</title>\n`;
+            // normal line
+            paragraphs += `${extractedString}`;
           }
-        } else if (headingNumberArray.includes(currentLineNum)) {
-          // among remaining head...
-          console.log(paragraphs.slice(paragraphs.length - 11));
-          paragraphs += `</p>`;
-          paragraphs += `</div>\n<div>`;
-          paragraphs += `<head>` + extractedString + "</head>";
-          paragraphs += `<p>`;
-        } else if (pageNumberArray.includes(currentLineNum)) {
-          // if heading only consists of digits, consider it page number
-          //paragraphs += `<pagenumber>${extractedString}</pagenumber>\n`;
-        } else {
-          // normal line
-          paragraphs += `${extractedString}`;
+          console.log("is after reference: ", isAfterReference);
+          console.log("extracted match ", extractedString.match(/reference/i));
+          if (extractedString.trim().match(/reference/i)) {
+            console.log("referenced detected", extractedString);
+            isAfterReference = true;
+          }
         }
       }
     } // End of page iterator for loop
     // End of the document
     text += `\n line count : ${totalLineCount}`;
     paragraphs += "</p></div>\n";
-    paragraphs += "</document>\n";
+    paragraphs += `</body>
+    </text>
+  </TEI>`;
 
     //   fs.appendFile(
     //     outputPath + `outputFontData_${inputFilename}.txt`,

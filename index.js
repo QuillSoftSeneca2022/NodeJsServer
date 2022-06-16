@@ -1,45 +1,33 @@
 var express = require("express");
 const fileUpload = require("express-fileupload");
 var app = express();
-var extraction = require("./extraction.js");
-//var extraction = require("./teiExtraction.js");
-var test = require("./testfile.js");
+//var extraction = require("./extraction.js"); // to work with the client browser
+var extraction = require("./teiExtraction.js"); // to connect with Python server
 const multer = require("multer");
-var Busboy = require("busboy");
 var fs = require("fs");
 var http = require("http");
 const bodyParser = require("body-parser");
 var pathModule = require("path");
 const cors = require("cors");
 const xml = require("xml");
-//import Router from "express-promise-router";
 const asyncHandler = require("express-async-handler");
 
-// storage setting for file // file,
+// storage setting to store files
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    //console.log("in disk storage", req, file);
     cb(null, "uploads");
   },
   filename: (req, file, cb) => {
-    //console.log("in file name", req, file);
-    //cb(null, Date.now() + "-" + file.originalname); // 파일 원본이름 저장
     cb(null, "input_file.pdf");
   },
 });
 
-app.listen(5000);
+app.listen(7000);
 app.use(express.static(__dirname));
 app.use(cors());
-//app.use(router);
-//app.use(fileUpload());
-//app.use(multer({ dest: __dirname + "/uploads/" }).any());
 app.use(multer({ storage: storage }).any());
 
-// respond with "hello world" when a GET request is made to the homepage
 app.get("/", function (req, res) {
-  var a = test.test();
-  //console.log(req.files);
   res.send("hello world");
 });
 
@@ -53,12 +41,9 @@ app
     res.send("file uploaded successfully from node server");
   });
 
+// '/api/process' is not working yet, needs to be replaced with JS library. Currently hardcoded.
 app.get("/api/process", function (req, res, next) {
-  // get_by_pdf
-  // qdoc = process_file
-  // return qdoc.to_json()
   console.log(" api process ");
-  //res.json({});
   res.json({
     concepts: [
       "cad3",
@@ -96,7 +81,7 @@ app.get("/api/process", function (req, res, next) {
   });
 });
 
-// select concept left panel
+// '/api/cluster' is not working yet, needs to be replaced with JS library. Currently hardcoded.
 app.post("/api/cluster", function (req, res, next) {
   console.log(" api cluster post ");
   //res.json({});
@@ -1269,25 +1254,20 @@ app
     "/api/tei",
     asyncHandler(async (req, res) => {
       console.log(" api tei get ");
+      let xmlData = ``;
       try {
-        let xmlData = `<?xml version="1.0" encoding="UTF-8"?>`;
-        try {
-          let data = await extraction.run();
-          console.log("data extraction success", data.slice(0, 32));
-          xmlData = data;
-        } catch (e) {
-          console.log("data extraction error", e);
-        }
-        res.header("Content-Type", "application/xml");
-        //xmlData += "<document></section></document>";
-        res.status(200).send(xmlData);
-      } catch (error) {
-        console.log("catching error in async", error);
+        let data = await extraction.run();
+        console.log("data extraction success", data.slice(0, 32));
+        xmlData = data;
+      } catch (e) {
+        console.log("data extraction error", e);
       }
+      res.header("Content-Type", "application/xml");
+      res.status(200).send(xmlData);
     })
   )
   .post("/api/tei", (req, res, next) => {
     console.log(" api tei post working ");
-    consolew.log("req.files in api tei", req.files);
+    console.log("req.files in api tei", req.files);
     res.send("file uploaded api tei");
   });
