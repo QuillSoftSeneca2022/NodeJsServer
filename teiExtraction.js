@@ -129,26 +129,21 @@ const main = async () => {
 
     const inputPath = "./uploads/";
     const inputFilename = "input_file.pdf";
-    //const inputFilename = filename;
     const outputPath = "./test/";
-    console.log("point 1 ");
     const doc = await PDFNet.PDFDoc.createFromFilePath(
       inputPath + inputFilename
     );
-    console.log("point 2 ");
     doc.initSecurityHandler();
-    console.log("point 3 ");
     const page = await doc.getPage(1);
-    console.log("point 4 ");
-    const target_region = await page.getCropBox(); // this method need to be changed
 
     if (page.id === "0") {
       console.log("Page not found.");
       return 1;
     }
+
     const txt = await PDFNet.TextExtractor.create();
     txt.begin(page);
-    console.log("point 3 ");
+
     const pageCount = await doc.getPageCount();
     let totalLineCount = 0;
     let fonts = [],
@@ -173,7 +168,7 @@ const main = async () => {
     // show basic information on console.log
     console.log("Total page count : ", pageCount);
 
-    // 1st big for loop for all pages
+    // 1st big for loop for all pages - to get possible heading information
     for (let i = 1; i <= pageCount; i++) {
       const page = await doc.getPage(i);
       const txt = await PDFNet.TextExtractor.create();
@@ -231,6 +226,8 @@ const main = async () => {
         }
       }
     } // first for loop ends
+
+    // All the meta data for different styles
     const HeaderData = possibleHeaders.reduce((accu, curr) => {
       accu[curr] = (accu[curr] || 0) + 1;
       return accu;
@@ -246,18 +243,13 @@ const main = async () => {
     const commonFont = Object.keys(fontsData).sort(
       (a, b) => fontsData[b] - fontsData[a]
     )[0];
-    //console.log("common font : ", commonFont);
-
     const fontsSizeData = fontSizes.reduce((accu, curr) => {
       accu[curr] = (accu[curr] || 0) + 1;
       return accu;
     }, {});
-    //console.log("font size data: ", fontsSizeData);
-
     const commonFontSize = Object.keys(fontsSizeData).sort(
       (a, b) => fontsSizeData[b] - fontsSizeData[a]
     )[0];
-
     const biggestFontSize = Object.keys(fontsSizeData).sort(
       (a, b) => parseFloat(b) - parseFloat(a)
     )[0];
@@ -265,12 +257,9 @@ const main = async () => {
       accu[curr] = (accu[curr] || 0) + 1;
       return accu;
     }, {});
-    //console.log("font size data: ", fontsColorData);
-
     const commonFontColor = Object.keys(fontsColorData).sort(
       (a, b) => fontsColorData[b] - fontsColorData[a]
     )[0];
-    //console.log("headers or footers", Headers);
 
     // 2nd for loop for all pages
     let isAfterReference = false;
@@ -444,6 +433,7 @@ const main = async () => {
     </text>
   </TEI>`;
 
+    // IF font data is needed, uncomment this to get the info as a file
     //   fs.appendFile(
     //     outputPath + `outputFontData_${inputFilename}.txt`,
     //     text,
@@ -458,8 +448,6 @@ const main = async () => {
     //       if (err) throw err;
     //     }
     //   );
-    //console.log("point 5 ");
-    //console.log("para", paragraphs);
 
     console.log(`total line count : ${totalLineCount}`);
     fs.writeFile(
@@ -474,23 +462,9 @@ const main = async () => {
   } catch (error) {
     console.log(error);
   }
-
-  //return paragraphs;
 };
 
 const run = async () => {
-  //   PDFNet.runWithoutCleanup(
-  //     main,
-  //     "demo:1646664550895:7bea68db03000000001e731609ee0475c019a5832e85c13c9a28dd51ac"
-  //   )
-  //     .catch(function (error) {
-  //       console.log("Error: " + JSON.stringify(error));
-  //     })
-  //     .then(function (result) {
-  //       console.log("result is in then", result.slice(1, 10));
-  //       return result;
-  //       //return PDFNet.shutdown();
-  //     });
   let data = await PDFNet.runWithoutCleanup(
     main,
     "demo:1646664550895:7bea68db03000000001e731609ee0475c019a5832e85c13c9a28dd51ac"
@@ -501,5 +475,3 @@ const run = async () => {
 module.exports = {
   run: run,
 };
-
-// Function Font Data ends here
